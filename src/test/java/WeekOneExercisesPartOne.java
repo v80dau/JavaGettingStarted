@@ -13,7 +13,7 @@ public class WeekOneExercisesPartOne {
     final double ROUND_TO_NEAREST_PENNY = .001;
 
     @Test
-    // TODO Code: What is the least amount of code we need to make this test pass?
+    // DONE Code: What is the least amount of code we need to make this test pass? Assigned the number of slices in the pizza to the method being called for the actual calculation.
     public void numberOfWholeSlicesForOnePizzaAndEightPeople() {
         int numberOfPeople = 8;
         int numberOfEightSlicePizzas = 1;
@@ -24,7 +24,6 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
     public void numberOfWholeSlicesFromOnePizzaAndEightPeople() {
         int numberOfPeople = 4;
         int numberOfEightSlicePizzas = 2;
@@ -47,7 +46,8 @@ public class WeekOneExercisesPartOne {
     }
 
     private int divideUpEightSlicePizzasEvenly(int numberOfPizzas, int numberOfPeople) {
-        return 0;
+        int pizzaSliceSize = 8;
+        return pizzaSliceSize / (numberOfPeople / numberOfPizzas);
     }
 
     private int determineLeftoverSlicesOfPizza(int numberOfPizzas, int numberOfPeople) {
