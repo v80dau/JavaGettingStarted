@@ -13,7 +13,8 @@ public class WeekOneExercisesPartOne {
     final double ROUND_TO_NEAREST_PENNY = .001;
 
     @Test
-    // DONE Code: What is the least amount of code we need to make this test pass? Assigned the number of slices in the pizza to the method being called for the actual calculation.
+    // TODO Code: What is the least amount of code we need to make this test pass?
+    // DONE Code: Reworked from initial commit and assigned the number of slices in the pizza to the method being called for the actual calculation.
     public void numberOfWholeSlicesForOnePizzaAndEightPeople() {
         int numberOfPeople = 8;
         int numberOfEightSlicePizzas = 1;
@@ -34,8 +35,8 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
-    // TODO RESPONSE: What operator is used to determine remainders?
+    // TODO Response: What operator is used to determine remainders?
+    // DONE Response: %
     public void leftoversWithFivePeopleAndTwoPizzas() {
         int numberOfPeople = 5;
         int numberOfEightSlicePizzas = 2;
@@ -46,18 +47,18 @@ public class WeekOneExercisesPartOne {
     }
 
     private int divideUpEightSlicePizzasEvenly(int numberOfPizzas, int numberOfPeople) {
-        int pizzaSliceSize = 8;
-        return pizzaSliceSize / (numberOfPeople / numberOfPizzas);
+        return (numberOfPizzas * 8) / numberOfPeople;
     }
 
     private int determineLeftoverSlicesOfPizza(int numberOfPizzas, int numberOfPeople) {
-        return 0;
+        return (numberOfPizzas * 8) % numberOfPeople;
     }
 
     @Test
     @Disabled
-    // TODO RESPONSE: In the variable declarations below, why is it necessary to place
+    // TODO Response: In the variable declarations below, why is it necessary to place
     //  an 'f' after 4.3 but not after 1500 or 4?
+    // DONE Response: Due to the decimal places so that java knows that it is a float type
     public void simpleInterestReturnsCorrectAmount() {
         float principalAmount = 1500;
         float interestRateAsAPercent = 4.3f;
