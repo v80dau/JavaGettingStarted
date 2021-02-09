@@ -55,10 +55,10 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
     // TODO Response: In the variable declarations below, why is it necessary to place
     //  an 'f' after 4.3 but not after 1500 or 4?
-    // DONE Response: Due to the decimal places so that java knows that it is a float type
+    // DONE Response: Due to the literal type of a decimal float being required to include the "f" by java.
+    // DONE Code: The interest rate has to be converted back to a decimal value from a percentage in order to calculate correctly against the principal and duration
     public void simpleInterestReturnsCorrectAmount() {
         float principalAmount = 1500;
         float interestRateAsAPercent = 4.3f;
@@ -80,6 +80,7 @@ public class WeekOneExercisesPartOne {
      * @return
      */
     private float calcSimpleInterest(float principal, float percentInterestRate, float numberOfYears) {
-        return 0;
+
+        return (principal * (percentInterestRate /100) * numberOfYears) + principal;
     }
 }
