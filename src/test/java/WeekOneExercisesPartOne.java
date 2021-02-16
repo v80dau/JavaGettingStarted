@@ -25,7 +25,7 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    public void numberOfWholeSlicesFromOnePizzaAndEightPeople() {
+    public void numberOfWholeSlicesFromTwoPizzasAndEightPeople() {
         int numberOfPeople = 4;
         int numberOfEightSlicePizzas = 2;
 
