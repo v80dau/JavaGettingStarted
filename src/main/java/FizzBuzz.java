@@ -7,6 +7,9 @@ public class FizzBuzz {
         } else if (number % 5 == 0) {
             toString = "Buzz";
         }
+        if (number % 3 == 0 && number % 5 == 0) {
+            toString = "FizzBuzz";
+        }
         return toString;
     }
 }
