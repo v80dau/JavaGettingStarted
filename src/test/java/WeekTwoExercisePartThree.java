@@ -1,11 +1,14 @@
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import javax.swing.text.DateFormatter;
 
 /**
  * Friday the thirteenth is fabled to be an 'unlucky' day.  Implement the code below to
@@ -17,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * Implement each step in the simplest manner possible where all tests continue to pass.
  *
  * Make a Git commit after implementing each test. Add only the minimum amount of code required
- * for each test case to make that test pass. This may innclude just putting in a literal value...
+ * for each test case to make that test pass. This may include just putting in a literal value...
  * do not add any additional code.
  *
  * Hint:  If you complete implementing a test and the next test passes w/o any changes to the
@@ -107,6 +110,9 @@ public class WeekTwoExercisePartThree {
     }
 
     public boolean isUnluckyDate(int year, int month, int day) {
+        String dateGiven = month + "/" + day + "/" + year;
+        DateTimeFormatter dateGivenFormat = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate jason = LocalDate.parse(dateGiven, dateGivenFormat);
         return false;
     }
 }

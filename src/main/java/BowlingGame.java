@@ -5,25 +5,25 @@ public class BowlingGame {
 
     public void roll(int pins) {
         // TODO: Replace this with description of why this postfix operator works here
-        rolls[index++] = pins;
+        rolls[index++] = pins; //creating array of each of the amount of pins in each roll
     }
 
     public int score() {
         int score = 0;
-        // TODO CODE: Change this to use a loop prior to implementing spare and strike calculation and then commit to git
-        //            This change should not break the existing tests that pass. This is called refactoring.
+        int startOfNextFrameIndex = 0;
 
-        // TODO RESPONSE: Why does the subscript need to start with zero?
-        for(int i = 0; i < index; i++) {
-            int spare = rolls[0] + rolls[1];
-            int strike = rolls[0];
-            if (spare == 10) {
-                rolls[1] = 10;
+        for (int frame = 1 ; frame < 11 ; frame++) { //counting literal frames not using an array
+            if (rolls[startOfNextFrameIndex] + rolls[startOfNextFrameIndex + 1] == 10) { // spare calculation
+                score += 10 + rolls[startOfNextFrameIndex + 2];
+                startOfNextFrameIndex += 2;
+            } else if (rolls[startOfNextFrameIndex] == 10) { // strike calculation
+                score += 10 + rolls[startOfNextFrameIndex + 1] + rolls[startOfNextFrameIndex + 2];
+                startOfNextFrameIndex += 1;
             }
-            if (strike == 10) {
-                rolls[0] = rolls[0] + rolls[1] + rolls[2];
+            else {
+                score += rolls[startOfNextFrameIndex] + rolls[startOfNextFrameIndex + 1];
+                startOfNextFrameIndex += 2;
             }
-            score += rolls[i];
         }
         return score;
     }
