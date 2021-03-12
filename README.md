@@ -6,6 +6,8 @@
 * Make sure you have set up a GitHub account using your Principal ID under the [Principal USIS Organization](https://github.com/principalusis)
 * Install either IntelliJ IDEA Ultimate, IntelliJ IDEA Community Edition, or Visual Studio Code on your local system
 * Install Gradle on your local system using [Chocolatey](https://chocolatey.org/), [PowerShell](https://chocolatey.org/install), or from the [Gradle Website](https://gradle.org/install/)
+* Create a link in your browser to our [IntelliJ Cheat Sheet]()
+  * **Talk about common IntelliJ functions and how to do them**
 
 ### Exercise Instructions
 * Implement each of the tests one at a time, top down
