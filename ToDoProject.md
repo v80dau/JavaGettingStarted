@@ -1,4 +1,6 @@
-# ToDO List Group Project
+# ToDo List Group Project
+Fork a copy of [JavaGettingStarted_ToDoList](https://github.com/gartee-john-PFG/JavaGettingStarted_ToDoList) to your GitHub account and clone it to your local machine.
+
 We will be wroking together to write a small program to manage a TODO list.  Using console-based menu techniques, create an application that works as follows:
 
 * First, always clear the screen prior to displaying a menu

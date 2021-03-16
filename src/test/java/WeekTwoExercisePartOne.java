@@ -33,6 +33,7 @@ public class WeekTwoExercisePartOne {
 
     // TODO Response: Why would you never refactor if you had a failing test?
 
+    // TODO: remember to make your changes in the src/main/bowlingGame.java
     @Test
     @Disabled
     // TODO Response: Why did we start with this test?

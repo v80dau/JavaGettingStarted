@@ -68,8 +68,8 @@ public class WeekTwoExercisePartThree {
         // TODO: don't forget to commit after passing the test
         LocalDate[] actual = unluckyDatesByYear(2019);
         LocalDate[] expected = new LocalDate[]{
-                LocalDate.of(2019, 9, 13),
-                LocalDate.of(2019, 12, 13),
+                LocalDate.of(2016, 5, 13),
+                null,
                 null,
                 null,
                 null,
