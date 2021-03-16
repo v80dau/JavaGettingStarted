@@ -18,7 +18,7 @@ public class WeekFourExercises {
     @Test
     @Disabled
     public void returnListSortedAlphabetically() {
-        List<String> myStrings = new ArrayList<>(){{
+        List<String> myStrings = new ArrayList<String>(){{
             add("one");
             add("two");
             add("three");
@@ -34,7 +34,7 @@ public class WeekFourExercises {
     @Test
     @Disabled
     public void returnMapInAscendingKeyOrder() {
-        Map<Integer, String> map = new HashMap<>() {{
+        Map<Integer, String> map = new HashMap<Integer,String>() {{
             put(3, "three");
             put(1, "one");
             put(5, "five");
