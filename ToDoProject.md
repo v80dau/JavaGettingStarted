@@ -3,6 +3,18 @@ Fork a copy of [JavaGettingStarted_ToDoList](https://github.com/gartee-john-PFG/
 
 We will be working together to write a small program to manage a TODO list.  Using console-based menu techniques, create an application that works as follows:
 
+Please read ALL of the instructions before you start.  We will be breaking this into small iterations:  
+
+1   Build the menu navigation first.  
+2   Build the JSON file in the code as a large String object 
+3   Implement the Display List logic next  
+4   Implement the Delete Item logic  
+5   Implement the Edit Logic    
+6   Implement the Save Logic to the current directory
+6   Implement the Save Logic to any directory     
+7   Implement the Read file (Open) logic from the current directory  
+8   Implement the Read file (Open) logic from any directory  
+
 * First, always clear the screen prior to displaying a menu
 * Main Menu
     ```
