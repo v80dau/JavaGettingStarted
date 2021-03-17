@@ -7,7 +7,11 @@ public class WeekTwoExercisePartOne {
 
     /**
      * We can briefly summarize the scoring rules for bowling:
+<<<<<<< HEAD
      *  Each game, or line of bowling, includes ten turns, or frames for the bowler.
+=======
+     *  Each game, or "line" of bowling, includes ten turns, or "frames" for the bowler.
+>>>>>>> 190b4e83b581c1d9ffee7a9ba8592552797c9470
      *
      *  In each frame, the bowler gets up to two tries to knock down all the pins.
      *
@@ -33,6 +37,7 @@ public class WeekTwoExercisePartOne {
 
     // TODO Response: Why would you never refactor if you had a failing test?
 
+    // TODO: remember to make your changes in the src/main/bowlingGame.java
     @Test
     // TODO Response: Why did we start with this test?
     public void whenRollingAllGutterBallsScoreIsZero() {

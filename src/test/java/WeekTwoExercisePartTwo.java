@@ -18,6 +18,7 @@ public class WeekTwoExercisePartTwo {
 
     // TODO Response: Why would you never refactor if you had a failing test?
 
+    // TODO: remember to make your changes in teh src/main/java/FizzBuzz.java file
     @Test
     public void sendingOneShouldReturnStringOne(){
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java

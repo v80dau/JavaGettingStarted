@@ -1,4 +1,5 @@
 public class WeekThreeExercisesPartOne {
+    // TODO: Go to the README.md file and get your assignment.  Create your new classes in the src/main/java directory
    // class visibility
    // static variables vs. instance variables
    // getters

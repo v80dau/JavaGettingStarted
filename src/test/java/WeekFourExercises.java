@@ -1,58 +1,49 @@
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import java.util.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WeekFourExercises {
-    public List<String> returnStringsInAlphabeticalOrder(){
-        String one = "one";
-        String two = "two";
-        String three = "three";
-        String four = "four";
-        String five = "five";
-
-        String [] myStrings = new String [] {one, two, three, four, five};
+    public List<String> returnStringsInAlphabeticalOrder(List<String> inputMap) {
         return Arrays.asList("");
     }
 
-    public List<String> returnStringsAsMapInGuaranteedNumericalKeyOrder(){
-        String one = "one";
-        String two = "two";
-        String three = "three";
-        String four = "four";
-        String five = "five";
+    public List<String> returnStringsAsMapInGuaranteedNumericalKeyOrder(Map<Integer, String> myMap) {
 
         return Arrays.asList("");
     }
 
-    // Create a set of accessors for each of the fields in the following class.
-    // Implement a fullName accessor that returns "lastName, firstName middleInitial"
-    // How would you implement  a static "clone()" method on the following class that
-    // returned a new immutable instance?
+    @Test
+    @Disabled
+    public void returnListSortedAlphabetically() {
+        List<String> myStrings = new ArrayList<String>(){{
+            add("one");
+            add("two");
+            add("three");
+            add("four");
+            add("five");
+        }};
 
-    public class Person{
-        private String firstName;
-        private  String middleName;
-        private String lastName;
-        private Date dateOfBirth;
-        private String phoneNumber;
+        List<String> actual = returnStringsInAlphabeticalOrder(myStrings);
 
-        public Person(){
-
-        }
-
-        public Person(String firstName, String middleName, String lastName, Date dateOfBirth, String phoneNumber){
-
-            this.firstName = firstName;
-            this.middleName = middleName;
-            this.lastName = lastName;
-            this.dateOfBirth = dateOfBirth;
-            this.phoneNumber = phoneNumber;
-        }
+        assertEquals(Arrays.asList("five", "four", "one", "three", "two"), actual);
     }
 
-    public void demonstrateCloneOfPersonClassImplementation(){
+    @Test
+    @Disabled
+    public void returnMapInAscendingKeyOrder() {
+        Map<Integer, String> map = new HashMap<Integer,String>() {{
+            put(3, "three");
+            put(1, "one");
+            put(5, "five");
+            put(2, "two");
+            put(4, "four");
+        }};
 
+        List<String> mapSortedByKey = returnStringsAsMapInGuaranteedNumericalKeyOrder(map);
+
+        assertEquals(Arrays.asList("one", "two", "three", "four", "five"), mapSortedByKey);
     }
-
-
 }
